@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  overflow: none;
+  /* outline: 1px solid red; */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar styling */
+nav.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: black !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: #dc3545 !important;
+}
+
+.navbar-brand {
+  color: #dc3545 !important;
+}
+
+.offcanvas-body,
+.offcanvas-header {
+  background-color: #ffffff !important;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.offcanvas-end {
+  width: 223px;
+}
+
+/* carousel styling */
+.carousel-content img {
+  object-fit: cover;
+}
+.carousel .info {
+  position: absolute;
+  background-color: #000000aa;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel .info h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  width: 45%;
+}
+
+.carousel .info p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 50%;
+}
+.carousel .info button {
+  width: 110px;
+}
+
+/* about  */
+
+.about-content i {
+  font-size: 30px;
+  background-color: #dc3545;
+  border-radius: 50%;
+  color: #fff;
+  padding: 10px;
+  height: 50px;
+}
+
+.about-section img {
+  width: 620px;
+  border-top-left-radius: 50px;
+  height: 500px;
+}
+/* project section */
+.project-section .image-container {
+  position: relative;
+  gap: 5px;
+}
+.project-section .image-container img {
+  width: 300px;
+}
+
+.project-section .image-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  /* background-color: #000000aa; */
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/* services */
+.service-section .card {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.service-section .card:hover {
+  transform: scale(1.05);
+}
+.service-section .card img {
+  height: 300px;
+}
+.service-section .card img:hover {
+  border: 4px solid #dc3545;
+  transition: all 1s ease-in;
+}
+.service-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* video player icon */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.video-container img {
+  width: 100%;
+  height: auto;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.play-icon svg {
+  fill: #fff;
+  width: 40px;
+  height: 40px;
+}
+
+.play-icon:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* work section */
+
+.work {
+  padding: 50px 0;
+}
+
+/* .checked-icon { */
+/* margin-top: 20px; Adjust the margin based on your design */
+/* } */
+
+.checked-icon i {
+  font-size: 20px;
+  background-color: #ffffff;
+  height: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+.checked-icon i:hover {
+  background-color: #dc3545;
+  color: #ffffff !important;
+}
+
+.work h5 {
+  font-size: 24px;
+  color: #dc3545;
+}
+
+.work h2 {
+  font-size: 36px;
+  color: #000;
+}
+
+.work p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .carousel .info h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .carousel .info p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .carousel .info button {
+    width: 100%;
+  }
+
+  .about-section .about-content i {
+    font-size: 24px;
+  }
+
+  .about-section img {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 50px;
+  }
+  .project-section .image-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .project-section .image-text {
+    top: 50%;
+  }
+
+  .service-section .Service-row {
+    justify-content: center !important;
+  }
+  .service-section .card {
+    width: 100% !important;
+  }
+  .video-container {
+    height: auto;
+  }
+}
